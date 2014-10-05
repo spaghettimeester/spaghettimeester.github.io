@@ -1,0 +1,368 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Homepage</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="icon" type="image/png" href="img/pomf.png">
+		<link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+	
+	<body>
+		<div class="bg" id="bg"></div>
+		<div class="center">
+			<div id="header">
+				<div id="toggleBlur">
+					<p style="cursor: pointer;" onclick="toggleBlur();">Toggle blur</p>
+				</div>
+				<div class="top" id="weatherContainer" onclick="toggleVisibility('weatherContainer', 'title');" style="cursor: pointer;">
+					<div id="weather"></div>
+					<div id="weather2"></div>
+				</div>
+				<div class="top" id="title">
+					<p class="bracket" onclick="loadWeather(); toggleVisibility('title', 'weatherContainer');" style="cursor: pointer;">Homepage</p>
+				</div>
+			</div>
+			<div class="searchContainer">
+                <form class="searchForm" method="get" action="https://google.com/search">
+                    <input class="searchBar google" type="text" name="q" placeholder="G"/>
+                </form>
+                <form class="searchForm" method="get" action="https://youtube.com/results">
+                    <input class="searchBar youtube" type="text" name="search_query" placeholder="Y" />
+                </form>
+                <form class="searchForm" method="get" action="https://en.wikipedia.org/w/index.php">
+                    <input class="searchBar wikipedia" type="text" name="search" placeholder="W" />
+                </form>
+            </div>
+			
+			<div class="d1x1">
+				<h1 class="bracket">News</h1>
+				<a href="http://m.nos.nl/">NOS.nl</a> <br />
+				<a href="http://www.nu.nl/">nu.nl</a> <br />
+				<a href="http://fok.nl/">FOK!nl</a> <br />
+				<a href="http://www.tweakers.net/">Tweakers</a> <br />
+				<a href="http://www.reddit.com/r/news">News</a> <br/>
+				<a href="http://www.reddit.com/r/worldnews">Worldnews</a> <br />
+			</div>
+			
+			<div class="d1x1">
+				<h1><a href="http://www.4chan.org/" class="bracket">4chan</a></h1>
+				<a href="http://boards.4chan.org/v/">/v/ - The Vidya</a> <br />
+				<a href="http://boards.4chan.org/vg/">/vg/ - Video Game Generals</a> <br />
+				<a href="http://boards.4chan.org/g/">/g/ - Tech Support</a> <br />
+			</div>
+			
+			<div class="d1x1">
+				<h1 class="bracket">Media</h1>
+				<a href="https://www.youtube.com/feed/subscriptions/">YouTube</a> <br />
+				<a href="http://www.soundcloud.com/">SoundCloud</a> <br />
+				<a href="https://twitter.com/"> Twitter</a> <br />
+				<a href="http://www.thepiratebay.se/">The Pirate Bay</a>
+			</div>
+			
+			<div class="d1x1">
+				<h1 class="bracket">HU</h1>
+				<a href="http://sharepoint.hu.nl">Sharepoint</a> <br />
+				<a href="http://mijnrooster.sharepoint.hu.nl">Rooster</a> <br />
+				<a href="http://www.bibliotheek.hu.nl/">Bibliotheek</a> <br />
+				<a href="http://mymail.hu.nl">HU Mail</a> <br />
+				<a href="https://www.osiris.hu.nl/osiris-student/LoginDirect.do">Osiris</a> <br />
+			</div>
+		
+			<div class="d1x1">
+				<h1 class="bracket">Games</h1>
+				<a href="http://www.gamersnet.nl/">Gamersnet</a> <br />
+				<a href="http:www.reddit.com/r/gaming/">/r/gaming</a> <br />
+				<a href="http:www.reddit.com/r/games/">/r/games</a> <br />
+				<a href="http://www.reddit.com/r/pcgaming/">/r/pcgaming</a> <br />
+			</div>
+			
+			<div class="d1x1">
+				<h1 class="bracket">E-mail</h1>
+				<a href="http://mail.google.com">Gmail</a> <br />
+				<a href="https://outlook.com">Outlook</a> <br />
+			</div>
+			
+			<div class="d1x1">
+				<h1 class="bracket">Misc</h1>
+				<a href="http://www.nederland.fm/">NL.fm</a> <br />
+				<a href="http://www.9292.nl/">9292</a> <br />
+			</div>
+			
+			<div class="d1x1">
+				<h1 class="bracket">Misc</h1>
+				<a href="http://www.google.com/">Google</a> <br />
+				<a href="http://www.tweakers.net/pricewatch">Pricewatch</a> <br />
+				<a href="http://sleepyti.me/">Sleepyti.me</a> <br />
+				<a href="http://battlelog.battlefield.com/">Battlelog</a>
+			</div>
+			
+			<div class="d2x1" id="todo">
+				<h1 class="bracket" style="cursor: pointer;" onclick="saveTodo();">Todo</h1>
+					<form method="post" action="">
+						<textarea id="todobox" name="comments">
+						</textarea>
+					</form>
+			</div>
+			
+			<div class="d1x1">
+				<h1 class="bracket">Misc</h1>
+				<a href="http://www.reddit.com/r/leagueoflegends">League of Legends</a> <br />
+				<a href="http://reddit.com/r/globaloffensive/">Global Offensive</a> <br />
+				<a href="http://reddit.com/r/paydaytheheist/">Payday 2</a> <br />
+				<a href="http://reddit.com/r/diablo3/">Diablo 3</a> <br />
+			</div>
+			
+			<div class="d1x1">
+				<h1 class="bracket">Technology</h1>
+				<a href="http://reddit.com/r/technology">Technology</a> <br />
+				<a href="http://reddit.com/r/android">Android</a> <br />
+				<a href="http://reddit.com/r/gadgets">Gadgets</a> <br />
+			</div>
+			
+			<div class="d2x1">
+				<h1><a href="http://m.nos.nl/" class="bracket">NOS Nieuws</a></h1>
+				<div class="d2x1Child" id="nos"></div>
+			</div>
+			
+			<div class="d2x1">
+				<h1><a href="http://www.tweakers.net/" class="bracket">Tweakers</a></h1>
+				<div class="d2x1Child" id="tweakers"></div>
+			</div>
+						
+			<div class="d4x2" id="xkcdContainer">
+				<h1><a href="http://www.xkcd.com/" class="bracket">xkcd</a></h1>
+				<div id="xkcd"></div>
+			</div>
+			
+			<div class="d4x2" id="whatifContainer">
+				<h1><a href="http://what-if.xkcd.com/" class="bracket">What If?</a></h1>
+				<div id="whatif"></div>
+			</div>
+			
+			<div class="d4x2" id="prequelContainer">
+				<h1><a href="http://www.prequeladventure.com/" class="bracket">PREQUEL</a></h1>
+				<div id="prequel"></div>
+				<div id="prequelDate"></div>
+			</div>
+		</div>
+		<div id="bottom-margin"></div>
+		
+		<script type="text/javascript">
+			var date = new Date();
+			var hour = date.getHours();
+			if (hour>6 && hour<18) {
+				var bgd = [ 'bgd1', 'bgd2', 'bgd3', 'bgd4', 'bgd5', 'bgd6', 'bgd7', 'bgd8', 'bgd9', 'bgd10', 'bgd11', 'bgd12', 'bgd12' ]
+				var bgd = bgd[Math.floor(Math.random() * bgd.length)];
+				document.querySelector('.bg').classList.add(bgd);
+			}
+			else {
+				var bgn = [ 'bgn1', 'bgn2', 'bgn3', 'bgn4', 'bgn5', 'bgn6', 'bgn7', 'bgn8', 'bgn9', 'bgn10', 'bgn11', 'bgn12', 'bgn13', 'bgn14', 'bgn15' ];
+				var bgn = bgn[Math.floor(Math.random() * bgn.length)];
+				document.querySelector('.bg').classList.add(bgn);
+			}
+		</script>
+		
+		<!--
+			jquery modified to contain feedEk and simpleWeather
+		-->
+		<script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+
+		<script type="text/javascript">
+			// Load the feeds
+			$('#tweakers').FeedEk( {
+				FeedUrl : 'https://tweakers.net/feeds/nieuws.xml',
+				MaxCount : 20,
+				ShowDesc : false,
+				ShowPubDate : false,
+				TitleLinkTarget:'_self',
+				DescCharacterLimit:1,
+			});
+			$('#nos').FeedEk( {
+				FeedUrl : 'http://feeds.nos.nl/nosjournaal',
+				MaxCount : 20,
+				ShowDesc : false,
+				ShowPubDate : false,
+				TitleLinkTarget:'_self',
+			});
+			
+			// Load the date for Prequel
+			$('#prequelDate').FeedEk( {
+				FeedUrl: 'http://www.prequeladventure.com/feed/',
+				MaxCount : 1,
+				ShowDesc : false,
+				ShowPubDate : true,
+				DateFormat: 'MM/DD/YYYY',
+				DateFormatLang:'en',
+			});
+			
+			// Determine current date
+			var date = new Date();
+			var day = date.getDay();
+			var currentmonth = parseInt(date.getMonth()+1,10);
+			var currentdate = date.getDate();
+			
+			$(window).load(function(){
+				var todo = localStorage.getItem("todo"); // retrieve
+				document.getElementById('todobox').innerHTML = todo;
+				// document.getElementById('todobox').value = getCookie('todo');
+				// window.alert(getCookie('todo'));
+				// Display Prequel after an update
+				var prequelDate_raw = document.querySelector(".itemDate").innerHTML;
+				var regex = prequelDate_raw.match(/(\d+)/g);
+				var regexdate = parseInt(regex[1], 10);
+				var regexmonth = parseInt(regex[0], 10);
+				if ((regexmonth == currentmonth) && (currentdate >= regexdate) && (currentdate <= regexdate+2)) {
+					document.getElementById("prequelContainer").style.display="inline";
+					$('#prequel').FeedEk( {
+						FeedUrl: 'http://www.prequeladventure.com/feed/',
+						MaxCount : 1,
+						ShowDesc : true,
+						ShowPubDate : false,
+						TitleLinkTarget:'_self',
+					});
+					$(document).ready(function () {
+						var itemContentPresent = false;
+						function checkForItemContent() {
+							itemContentPresent = ($('.itemContent').length > 0) ? true : false;
+							if (itemContentPresent) {
+								$('#prequel').find('img').each(function() {
+									var newSrc = 'http://www.prequeladventure.com' + $(this).attr('src');
+									$(this).attr('src', newSrc);
+								});
+								window.clearInterval(doCheck); 
+							}
+						}
+						var doCheck = window.setInterval(checkForItemContent, 250);
+					});
+				}
+				
+				// NOS desktop to NOS mobile
+				$("a[href^='http://feeds.nos.nl']").each(function() { 
+					this.href = this.href.replace(/^http:\/\/feeds\.nos\.nl\/(.*)\//, "http://m.nos.nl/artikel/");
+				});
+
+				// XKCD content
+				if (day == 1 || day == 3 || day == 5) {
+					$('#xkcd').FeedEk( {
+						FeedUrl : 'https://xkcd.com/atom.xml',
+						MaxCount : 1,
+						ShowPubDate : false,
+						TitleLinkTarget:'_self',
+					});
+					document.getElementById("xkcdContainer").style.display="inline";
+				}
+				if (day == 2 || day == 3) {
+					$("#whatif").FeedEk( {
+						FeedUrl : 'http://what-if.xkcd.com/feed.atom',
+						MaxCount : 1,
+						ShowPubDate : false,
+						TitleLinkTarget:'_self',
+					});
+					document.getElementById("whatifContainer").style.display="inline";
+					$(document).ready(function () {
+						var itemContentPresent = false;
+						function checkForItemContent() {
+							itemContentPresent = ($('.itemContent').length > 0) ? true : false;
+							if (itemContentPresent) {
+								$('#whatif').find('img').each(function() {
+									var newSrc = 'http://what-if.xkcd.com' + $(this).attr('src');
+									$(this).attr('src', newSrc);
+								});
+								window.clearInterval(doCheck); 
+							}
+						}
+						var doCheck = window.setInterval(checkForItemContent, 250);
+					});
+				}
+				//window.alert("today "+currentdate+"\nprequel "+regexdate+"\n"+prequelDate_raw+"\n");
+			});
+			
+			// Header title/weather panel switching
+			var wide = window.matchMedia( "screen and (min-width: 840px)" );
+			function toggleVisibility(id1, id2) {
+				var hide = document.getElementById(id1);
+				var show = document.getElementById(id2);
+				//hide.style.display = 'none';
+				//show.style.display = 'block';
+				hide.style.height = '0px';
+				hide.style.overflow = 'hidden';
+				if (wide.matches){
+					show.style.height = '130px';
+				}
+				else {
+					show.style.height = '80px';
+				}
+			}
+			
+			// Only load weather on click
+			function loadWeather() {
+				$.simpleWeather({
+					woeid: '729028',
+					unit: 'c',
+					success: function(weather) {
+						html = '<p>'+weather.city+'<br />';
+						html += weather.temp+'&deg;'+weather.units.temp+'<br />';
+						html += weather.currently+'</p>';
+						$("#weather2").html(html);
+					},
+					error: function(error) {
+						$("#weather2").html('<p>'+error+'</p>');
+					}
+				});
+				
+				if ("geolocation" in navigator) {
+					navigator.geolocation.getCurrentPosition(function(position) {
+						loadWeatherPos(position.coords.latitude+','+position.coords.longitude);
+					});
+				}
+				
+				function loadWeatherPos(location, woeid) {
+					$.simpleWeather({
+						location: location,
+						woeid: woeid,
+						unit: 'c',
+						success: function(weather) {
+							html = '<p>'+weather.city+'<br />';
+							html += weather.temp+'&deg;'+weather.units.temp+'<br />';
+							html += weather.currently+'</p>';
+							$("#weather").html(html);
+						},
+						error: function(error) {
+						$("#weather").html('<p>'+error+'</p>');
+						}
+					});
+				}
+				
+			}
+			
+			function toggleBlur(){
+				if ( getCookie('blur') != 'true' ) {
+					document.cookie='blur=true';
+				} else {
+					document.cookie='blur=false';
+				}
+				location.reload();
+				// window.alert(getCookie('blur'));
+			}
+			if (getCookie('blur') == 'true') {
+				document.getElementById('bg').style.filter = 'url(img/blur.svg#blur)';
+				// document.getElementById('bg').style.webkitFilter = 'url(img/blur.svg#blur)';
+				// document.getElementById('bg').style.webkitFilter = 'blur(5px)';
+				// document.getElementById('bg').style.webkitFilter = 'grayscale(1)';
+			}
+			
+			function getCookie(name) {
+				var value = "; " + document.cookie;
+				var parts = value.split("; " + name + "=");
+				if (parts.length == 2) return parts.pop().split(";").shift();
+			}
+
+			
+			function saveTodo(){
+				var todotext=document.getElementById('todobox').value;
+				localStorage.setItem("todo", todotext);				
+			}
+		</script>
+	</body>
+</html>
