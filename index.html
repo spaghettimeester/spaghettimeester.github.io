@@ -129,22 +129,6 @@
 				<h1><a href="http://www.tweakers.net/" class="bracket">Tweakers</a></h1>
 				<div class="d2x1Child" id="tweakers"></div>
 			</div>
-						
-			<div class="d4x2" id="xkcdContainer">
-				<h1><a href="http://www.xkcd.com/" class="bracket">xkcd</a></h1>
-				<div id="xkcd"></div>
-			</div>
-			
-			<div class="d4x2" id="whatifContainer">
-				<h1><a href="http://what-if.xkcd.com/" class="bracket">What If?</a></h1>
-				<div id="whatif"></div>
-			</div>
-			
-			<div class="d4x2" id="prequelContainer">
-				<h1><a href="http://www.prequeladventure.com/" class="bracket">PREQUEL</a></h1>
-				<div id="prequel"></div>
-				<div id="prequelDate"></div>
-			</div>
 		</div>
 		<div id="bottom-margin"></div>
 		
@@ -298,7 +282,7 @@
 			// Only load weather on click
 			function loadWeather() {
 				$.simpleWeather({
-					woeid: '729028',
+					woeid: '15003914',
 					unit: 'c',
 					success: function(weather) {
 						html = '<p>'+weather.city+'<br />';
