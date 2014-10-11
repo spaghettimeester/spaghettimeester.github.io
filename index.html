@@ -78,7 +78,7 @@
 			</div>
 			
 			<div class="d1x1">
-				<h1 class="bracket">E-mail</h1>
+				<h1 class="bracket">Mail</h1>
 				<a href="http://mail.google.com">Gmail</a> <br />
 				<a href="https://outlook.com">Outlook</a> <br />
 			</div>
@@ -93,7 +93,6 @@
 				<h1 class="bracket">Misc</h1>
 				<a href="http://www.google.com/">Google</a> <br />
 				<a href="http://www.tweakers.net/pricewatch">Pricewatch</a> <br />
-				<a href="http://sleepyti.me/">Sleepyti.me</a> <br />
 				<a href="http://battlelog.battlefield.com/">Battlelog</a>
 			</div>
 			
@@ -225,40 +224,6 @@
 				$("a[href^='http://feeds.nos.nl']").each(function() { 
 					this.href = this.href.replace(/^http:\/\/feeds\.nos\.nl\/(.*)\//, "http://m.nos.nl/artikel/");
 				});
-
-				// XKCD content
-				if (day == 1 || day == 3 || day == 5) {
-					$('#xkcd').FeedEk( {
-						FeedUrl : 'https://xkcd.com/atom.xml',
-						MaxCount : 1,
-						ShowPubDate : false,
-						TitleLinkTarget:'_self',
-					});
-					document.getElementById("xkcdContainer").style.display="inline";
-				}
-				if (day == 2 || day == 3) {
-					$("#whatif").FeedEk( {
-						FeedUrl : 'http://what-if.xkcd.com/feed.atom',
-						MaxCount : 1,
-						ShowPubDate : false,
-						TitleLinkTarget:'_self',
-					});
-					document.getElementById("whatifContainer").style.display="inline";
-					$(document).ready(function () {
-						var itemContentPresent = false;
-						function checkForItemContent() {
-							itemContentPresent = ($('.itemContent').length > 0) ? true : false;
-							if (itemContentPresent) {
-								$('#whatif').find('img').each(function() {
-									var newSrc = 'http://what-if.xkcd.com' + $(this).attr('src');
-									$(this).attr('src', newSrc);
-								});
-								window.clearInterval(doCheck); 
-							}
-						}
-						var doCheck = window.setInterval(checkForItemContent, 250);
-					});
-				}
 				//window.alert("today "+currentdate+"\nprequel "+regexdate+"\n"+prequelDate_raw+"\n");
 			});
 			
