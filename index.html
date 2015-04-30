@@ -7,7 +7,7 @@
 		<link rel="icon" type="image/png" href="img/pomf.png">
 		<link href="style.css" rel="stylesheet" type="text/css">
 	</head>
-	
+
 	<body>
 		<div class="bg" id="bg"></div>
 		<div class="center">
@@ -34,7 +34,7 @@
                     <input class="searchBar wikipedia" type="text" name="search" placeholder="W" />
                 </form>
             </div>
-			
+
 			<div class="d1x1">
 				<h1 class="bracket">News</h1>
 				<a href="http://m.nos.nl/">NOS.nl</a> <br />
@@ -44,23 +44,23 @@
 				<a href="http://www.reddit.com/r/news">News</a> <br/>
 				<a href="http://www.reddit.com/r/worldnews">Worldnews</a> <br />
 			</div>
-			
+
 			<div class="d1x1">
 				<h1><a href="http://www.4chan.org/" class="bracket">4chan</a></h1>
 				<a href="http://boards.4chan.org/v/">/v/ - The Vidya</a> <br />
 				<a href="http://boards.4chan.org/vg/">/vg/ - Video Game Generals</a> <br />
 				<a href="http://boards.4chan.org/g/">/g/ - Tech Support</a> <br />
 			</div>
-			
+
 			<div class="d1x1">
 				<h1 class="bracket">Media</h1>
 				<a href="https://www.youtube.com/feed/subscriptions/">YouTube</a> <br />
 				<a href="http://www.soundcloud.com/">SoundCloud</a> <br />
 				<a href="https://twitter.com/"> Twitter</a> <br />
 				<a href="http://www.thepiratebay.se/">The Pirate Bay</a> <br />
-				<a href="http://www.kat.ph/">Kickasstorrents
+				<a href="http://www.kat.cr/">Kickasstorrents
 			</div>
-			
+
 			<div class="d1x1">
 				<h1 class="bracket">HU</h1>
 				<a href="http://sharepoint.hu.nl">Sharepoint</a> <br />
@@ -69,7 +69,7 @@
 				<a href="http://mymail.hu.nl">HU Mail</a> <br />
 				<a href="https://www.osiris.hu.nl/osiris-student/LoginDirect.do">Osiris</a> <br />
 			</div>
-		
+
 			<div class="d1x1">
 				<h1 class="bracket">Games</h1>
 				<a href="http://www.gamersnet.nl/">FOK!Games</a> <br />
@@ -78,13 +78,13 @@
 				<a href="http://www.reddit.com/r/pcmasterrace/">/r/pcmasterrace</a> <br />
 				<a href="http://www.reddit.com/r/games/">/r/games</a> <br />
 			</div>
-			
+
 			<div class="d1x1">
 				<h1 class="bracket">Mail</h1>
 				<a href="http://mail.google.com">Gmail</a> <br />
 				<a href="https://outlook.com">Outlook</a> <br />
 			</div>
-			
+
 			<div class="d1x1">
 				<h1 class="bracket">Misc</h1>
 				<a href="http://www.9292.nl/">9292</a> <br />
@@ -93,15 +93,15 @@
 				<a href="http://www.reddit.com/r/hiphopheads">Hiphopheads</a> <br />
 				<a href="http://www.reddit.com/r/music/">Music</a> <br />
 			</div>
-			
+
 			<div class="d1x1">
 				<h1 class="bracket">Misc</h1>
 				<a href="http://www.google.com/">Google</a> <br />
 				<a href="http://www.tweakers.net/pricewatch">Pricewatch</a> <br />
 				<a href="http://www.reddit.com/r/gamedeals/">Gamedeals</a> <br />
-				<a href="http://www.reddit.com/r/buildapcsales/">Buildapcsales</a> <br />	
+				<a href="http://www.reddit.com/r/buildapcsales/">Buildapcsales</a> <br />
 			</div>
-			
+
 			<div class="d2x1" id="todo">
 				<h1 class="bracket" style="cursor: pointer;" onclick="saveTodo();">Todo</h1>
 					<form method="post" action="">
@@ -109,7 +109,7 @@
 						</textarea>
 					</form>
 			</div>
-			
+
 			<div class="d1x1">
 				<h1 class="bracket">Misc</h1>
 				<a href="http://www.reddit.com/r/leagueoflegends">League of Legends</a> <br />
@@ -118,7 +118,7 @@
 				<a href="http://reddit.com/r/grandtheftautov/">GTA V</a> <br />
 				<a href="http://reddit.com/r/grandtheftautov_pc/">GTA V PC</a> <br />
 			</div>
-			
+
 			<div class="d1x1">
 				<h1 class="bracket">Technology</h1>
 				<a href="http://reddit.com/r/technology">Technology</a> <br />
@@ -127,19 +127,19 @@
 				<a href="http://reddit.com/r/androidwear">Android Wear</a> <br />
 				<a href="http://reddit.com/r/lggwatch">LG G Watch</a> <br />
 			</div>
-			
+
 			<div class="d2x1">
 				<h1><a href="http://m.nos.nl/" class="bracket">NOS Nieuws</a></h1>
 				<div class="d2x1Child" id="nos"></div>
 			</div>
-			
+
 			<div class="d2x1">
 				<h1><a href="http://www.tweakers.net/" class="bracket">Tweakers</a></h1>
 				<div class="d2x1Child" id="tweakers"></div>
 			</div>
 		</div>
 		<div id="bottom-margin"></div>
-		
+
 		<script type="text/javascript">
 			var date = new Date();
 			var hour = date.getHours();
@@ -154,7 +154,7 @@
 				document.querySelector('.bg').classList.add(bgn);
 			}
 		</script>
-		
+
 		<!--
 			jquery modified to contain feedEk and simpleWeather
 		-->
@@ -177,7 +177,7 @@
 				ShowPubDate : false,
 				TitleLinkTarget:'_self',
 			});
-			
+
 			// Load the date for Prequel
 			$('#prequelDate').FeedEk( {
 				FeedUrl: 'http://www.prequeladventure.com/feed/',
@@ -187,13 +187,13 @@
 				DateFormat: 'MM/DD/YYYY',
 				DateFormatLang:'en',
 			});
-			
+
 			// Determine current date
 			var date = new Date();
 			var day = date.getDay();
 			var currentmonth = parseInt(date.getMonth()+1,10);
 			var currentdate = date.getDate();
-			
+
 			$(window).load(function(){
 				var todo = localStorage.getItem("todo"); // retrieve
 				document.getElementById('todobox').innerHTML = todo;
@@ -222,20 +222,20 @@
 									var newSrc = 'http://www.prequeladventure.com' + $(this).attr('src');
 									$(this).attr('src', newSrc);
 								});
-								window.clearInterval(doCheck); 
+								window.clearInterval(doCheck);
 							}
 						}
 						var doCheck = window.setInterval(checkForItemContent, 250);
 					});
 				}
-				
+
 				// NOS desktop to NOS mobile
-				$("a[href^='http://feeds.nos.nl']").each(function() { 
+				$("a[href^='http://feeds.nos.nl']").each(function() {
 					this.href = this.href.replace(/^http:\/\/feeds\.nos\.nl\/(.*)\//, "http://m.nos.nl/artikel/");
 				});
 				//window.alert("today "+currentdate+"\nprequel "+regexdate+"\n"+prequelDate_raw+"\n");
 			});
-			
+
 			// Header title/weather panel switching
 			var wide = window.matchMedia( "screen and (min-width: 840px)" );
 			function toggleVisibility(id1, id2) {
@@ -252,7 +252,7 @@
 					show.style.height = '80px';
 				}
 			}
-			
+
 			// Only load weather on click
 			function loadWeather() {
 				$.simpleWeather({
@@ -268,13 +268,13 @@
 						$("#weather2").html('<p>'+error+'</p>');
 					}
 				});
-				
+
 				if ("geolocation" in navigator) {
 					navigator.geolocation.getCurrentPosition(function(position) {
 						loadWeatherPos(position.coords.latitude+','+position.coords.longitude);
 					});
 				}
-				
+
 				function loadWeatherPos(location, woeid) {
 					$.simpleWeather({
 						location: location,
@@ -291,9 +291,9 @@
 						}
 					});
 				}
-				
+
 			}
-			
+
 			function toggleBlur(){
 				if ( getCookie('blur') != 'true' ) {
 					document.cookie='blur=true';
@@ -309,17 +309,17 @@
 				// document.getElementById('bg').style.webkitFilter = 'blur(5px)';
 				// document.getElementById('bg').style.webkitFilter = 'grayscale(1)';
 			}
-			
+
 			function getCookie(name) {
 				var value = "; " + document.cookie;
 				var parts = value.split("; " + name + "=");
 				if (parts.length == 2) return parts.pop().split(";").shift();
 			}
 
-			
+
 			function saveTodo(){
 				var todotext=document.getElementById('todobox').value;
-				localStorage.setItem("todo", todotext);				
+				localStorage.setItem("todo", todotext);
 			}
 		</script>
 	</body>
