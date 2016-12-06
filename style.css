@@ -15,6 +15,9 @@
 .bgd11 { background-image: url(img/bgd11.jpg) !important; }
 .bgd12 { background-image: url(img/bgd12.jpg) !important; }
 .bgd13 { background-image: url(img/bgd13.jpg) !important; }
+.bgd14 { background-image: url(img/bgd14.jpg) !important; }
+.bgd15 { background-image: url(img/bgd15.jpg) !important; }
+.bgd16 { background-image: url(img/bgd16.jpg) !important; }
  
 
 .bgn1 { background-image: url(img/bgn1.jpg) !important; } 
@@ -31,7 +34,12 @@
 .bgn12 { background-image: url(img/bgn12.jpg) !important; } 
 .bgn13 { background-image: url(img/bgn13.jpg) !important; } 
 .bgn14 { background-image: url(img/bgn14.jpg) !important; } 
-.bgn15 { background-image: url(img/bgn15.jpg) !important; } 
+.bgn15 { background-image: url(img/bgn15.jpg) !important; }
+.bgn16 { background-image: url(img/bgn16.jpg) !important; }
+.bgn17 { background-image: url(img/bgn17.jpg) !important; }
+.bgn18 { background-image: url(img/bgn18.jpg) !important; }
+.bgn19 { background-image: url(img/bgn19.jpg) !important; }
+.bgn20 { background-image: url(img/bgn20.jpg) !important; }
 
 /*
 	General stuff
@@ -40,9 +48,9 @@
 	/* position: absolute; */
 	width: 100%;
 	height: 100%;
-	/*background: url('backgrounds/bgd1.jpg') fixed center / cover;*/
+	/*background: url('img/bgd1.jpg') fixed center / cover;*/
 	z-index: -1;
-	background: url('backgrounds/bgd1.jpg') fixed center / cover;
+	background: url('img/bgd1.jpg') fixed center / cover;
 	position: fixed;
 	/* filter: url(img/blur.svg#blur);
 	-webkit-filter: url(img/blur.svg#blur); */
@@ -67,7 +75,7 @@
 }
 
 html{
-	/*background: url('backgrounds/bgd1.jpg') fixed center / cover;*/
+	/*background: url('img/bgd1.jpg') fixed center / cover;*/
 }
 
 body {
